@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Music Player</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="music-player">
+  <img id="albumCover" class="album-cover"
+    src="https://images.unsplash.com/photo-1503327783884-1a65f9c1e207"
+    alt="Album Cover" />
+
+  <h2 id="songTitle" class="song-title">Song Title</h2>
+  <p id="artistName" class="artist-name">Artist Name</p>
+
+  <audio id="audioPlayer" controls>
+    <source id="audioSource" src="" type="audio/mp3">
+  </audio>
+
+  <div class="controls">
+    <button id="prevBtn">Prev</button>
+    <button id="playPauseBtn">Play</button>
+    <button id="nextBtn">Next</button>
+  </div>
+
+  <ul class="song-list">
+    <li onclick="changeSong(0)">Drive Song - Album 1</li>
+    <li onclick="changeSong(1)">Peaceful Piano - Album 2</li>
+    <li onclick="changeSong(2)">Upbeat Energy - Album 3</li>
+    <li onclick="changeSong(3)">Relax Vibes - Album 4</li>
+  </ul>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

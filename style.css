@@ -1,0 +1,86 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  height: 100vh;
+  background: url('https://images.unsplash.com/photo-1511671782779-c97d3d27a1d4') no-repeat center center fixed;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  color: #fff;
+}
+
+body::before {
+  content: "";
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: rgba(0, 0, 0, 0.6);
+  z-index: 0;
+}
+
+.music-player {
+  position: relative;
+  z-index: 1;
+  background-color: #C0C0C0;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px #000;
+  width: 320px;
+  text-align: center;
+}
+
+.album-cover {
+  width: 220px;
+  height: 220px;
+  border-radius: 12px;
+  margin-bottom: 20px;
+  object-fit: cover;
+}
+
+.song-title {
+  font-size: 1.5em;
+  margin-bottom: 10px;
+}
+
+.artist-name {
+  font-size: 1.1em;
+  margin-bottom: 15px;
+  color: #ddd;
+}
+
+.controls {
+  display: flex;
+  justify-content: space-around;
+  margin: 10px 0 15px;
+}
+
+button {
+  background-color: #444;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  font-size: 1em;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #888;
+}
+
+.song-list {
+  margin-top: 15px;
+  list-style: none;
+  padding: 0;
+}
+
+.song-list li {
+  margin: 8px 0;
+  cursor: pointer;
+}
+
+.song-list li:hover {
+  color: #ffcc00;
+}
